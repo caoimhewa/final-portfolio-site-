@@ -13,9 +13,90 @@ a:hover {color: white;}
 
 h1 { text-align: center; color: grey; font-size: 3em;}
 h2 { text-align: center; color: grey; font-size: 2em;}
+h3 { text-align: left;
+      color: grey;
+     font-size: 2em;
+    padding-left: 9em;
+   }
+h4 { text-align: left;
+      color: grey;
+     font-size: 2em;
+    padding-left: 2.5em;
+padding-bottom: em;
+padding-top: .4em; }
+
+h5 { text-align: left;
+      color: grey;
+     font-size: 2em;
+    padding-left: 2.4em;
+      padding-bottom:;
+padding-top:1e}
+
+h6 { text-align: left;
+      color: grey;
+     font-size: 2em;
+    padding-left: 2.4em;
+}
+
+h7 {
+    text-align: center;
+      color: white;
+     font-size: .99em;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: em;
+    margin-bottom: ;
+    
+}
+
 p {text-align: center; color: gray;
-padding-left: 5em;
-padding-right: 5em}
+   padding-left: 5em;
+   padding-right: 5em}
+
+.skills {
+    padding-bottom: 2em;
+    padding-top: 1em;
+    text-align: left;
+    line-height: 150%;
+    letter-spacing: 1.5px;}
+    
+.main { 
+     padding-bottom: 4em;
+    padding-top:em;
+    text-align: left;
+    line-height: 150%;
+    letter-spacing: 1.5px;}
+    
+.main2 { 
+     padding-bottom: em;
+    padding-top: em;
+    text-align: left;
+    line-height: 150%;
+    letter-spacing: 1.5px;}
+
+.main3 { 
+     padding-bottom: em;
+    padding-top: em;
+    text-align: left;
+    line-height: 150%;
+    letter-spacing: 1.5px;}
+}
+
+
+#description {
+    padding-bottom: 20em;
+    padding-top: 20em;
+    text-align: left;
+    line-height: 220%;
+    letter-spacing: 1.5px;
+    margin-left: 100%;
+
+}
+    
+    
+    
+    
+}
 
 .center {
     display: flex;
@@ -29,73 +110,26 @@ padding-right: 5em}
 
 
 div.cover{
-    height: 80vh;
     width: 100vw;
-    background-size: cover;
     position: relative;
     display: inline-block;
-    margin-right: 20vh;    
+    padding-bottom: 42%;
 }
 
 .main div.cover {
-    background: url(../images/cover1.jpg)
-    center center no-repeat;
+    background: #f6e3e3 url(../images/background6.jpg) top center/100% repeat space;
     background-attachment: fixed;
 }
-    
-div.cover.casestudy1{
-    background: url(../images/covercs1.jpg)
-    center center no-repeat;
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
-div.cover.casestudy2{
-    background: url(../images/covercs2.jpg)
-    center center no-repeat;
-    height: 80vh;
-    width: 100vw;
-    background-size: cover;
-    position: relative;
-    display: inline-block;
-    margin-right: 20vh
+.arrow-container img {
+    max-width: 3rem;
 }
-
-div.cover.casestudy3{
-    background: url(../images/milan.jpg)
-    center center no-repeat;
-    height: 80vh;
-    width: 100vw;
-    background-size: cover;
-    position: relative;
-    display: inline-block;
-    margin-right: 20vh
-}
-
-div.cover.casestudy4{
-    background: url(../images/milan.jpg)
-    center center no-repeat;
-    height: 80vh;
-    width: 100vw;
-    background-size: cover;
-    position: relative;
-    display: inline-block;
-    margin-right: 20vh
-}
-   
-    
-    div.casestudy1 {
-        height: 100vh;
-        width: 100vw;
-        display: inline-block;
- } 
-
-
-
-    div.casestudy2 {
-    height: 100vh;
-    width: 100vw;
-    display: inline-block;
-    
-    }
 
 /*---------------- NAV --------------------*/   
 
@@ -116,9 +150,10 @@ ul.nav {
   letter-spacing: 2px;
    position: fixed;
    top: 0;
-    background-color: #f8f2f4;
+    background-color: #f5e3e3;
         width: 100%;
     margin-top: 0;
+    z-index: 1001;
 }
     
 
@@ -132,44 +167,85 @@ ul li  {
 }
 
 ul li a {
-  color: grey;
+  color: #4c4c4c;
   text-decoration: none;
 }
 
  ul li a:hover {
   border-bottom: none;
-  opacity: .6;
 }
 
+.nav-cs1 {
+    background-color: #f5e3e3 !important;
+}
+
+.nav-cs2 {
+    
+     background-color: #B0CCD2 !important;
+}
+
+.nav-cs3 {
+    
+     background-color: #d5ecee !important;
+}
+
+.nav-cs4 {
+    
+     background-color: #d5ecee !important;
+}
+
+.nav-cs5 {
+    
+     background-color: #d5ecee !important;
+}
+
+.nav-cs6 {
+    
+     background-color: #d5ecee !important;
+}
 
 /*-------------- portfolio -----------*/
 
-img.app {
-    margin-left: 5vw;
-    margin-top: 20vh
-  }   
-
-img.icons {
-    margin-left: 10vw;
-    
+.case-study-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 19rem;
 }
 
-img.brand {
-    margin-left: 5vw;
-    margin-top: 15vh;
-    margin-bottom: 20vh;
+.case-study {
+    position: relative;
 }
 
-img.fairy {
-    margin-left: 10vw;
-    margin-bottom: 20vh;
+.case-study img {
+    max-width: 17rem;
 }
 
+.image-hover {
+  background: rgba(255,255,255,0.5);
+  color: #4c4c4c;
+  cursor: pointer;
+  display: table;
+  height: 17rem;
+  left: 0;
+  position: absolute;
+  top: -16rem;
+  width: 17rem;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
 
-    
-    
+.image-hover:hover {
+    opacity: 1;
+}
 
-
+.image-hover span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 
 /*--------------- footer---------------*/
 
@@ -182,14 +258,15 @@ hr  {
     width: 13%;
     border: 0;
     background-color: #98A1B7;
-    height: 3.5px;
+   
     margin-top: -1.3em;}
 
 footer {
-    background-color: #F8F2F4;
+    background-color: #F5E3E3;
     text-align: center;
     margin: 0;
     padding: 0;
+    padding-top: 1em
 }
     
 
@@ -219,12 +296,11 @@ footer li a:hover {
 */
 
 #foot-pos {
-    width:100%;
-    margin:0 auto;
     list-style:none;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 19rem;
 }
 
 .social {
@@ -239,7 +315,6 @@ footer li a:hover {
 #foot-pos a {
     display:block;
     text-align:center;
-    width:150px; /* fixed width */
     text-decoration:none; 
     padding: 15px;
     color:clear;
@@ -263,4 +338,117 @@ footer li a:hover {
 
 
 
-/*----------------- case study 1 ------------*/
+/*----------------- case studies ------------*/
+div.cover.casestudy1{
+    background: url(../images/covercs1.jpg)
+    center center no-repeat;
+    padding-bottom: 45%;
+}
+
+div.cover.casestudy2{
+    background: url(../images/elementcover.png)
+      center center no-repeat;
+    padding-bottom: 45%;
+
+}
+
+div.cover.casestudy3{
+    background: url(../images/potioncover.png)
+      center center no-repeat;
+    padding-bottom: 45%;
+
+}
+
+div.cover.casestudy4{
+    background: url(../images/brandcover.png)
+       center center no-repeat;
+    padding-bottom: 45%;
+
+}
+
+div.cover.casestudy5{
+    background: url(../images/ceramiccover.png)
+       center center no-repeat;
+    padding-bottom: 45%;
+
+}
+
+div.cover.casestudy6{
+    background: url(../images/teacupcover.png)
+       center center no-repeat;
+    padding-bottom: 45%;
+
+}
+
+/*---row-layouts--*/
+.row-twothirds {
+    display: flex;
+}
+
+.row-twothirds .content-third {
+    width: calc(100% / 3 * 1);
+}
+.row-twothirds .content-twothirds {
+    width: calc(100% / 3 * 2);
+}
+
+.row-halves {
+    display: flex;
+}
+
+.row-halves .content-half {
+    width: 50%;
+}
+
+.light-pink {
+    background-color: #fbf7f7;
+}
+
+.image-half img {
+    width: 100%;
+}
+
+.full-width-image img {
+    width: 100%;
+    
+        
+    
+}
+
+/*------------- about ------------*/
+
+
+
+.app {
+     align-content: center; 
+     width: 400px;
+     height: auto;
+     align-items: center;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+div.about {
+    
+    padding-top: 10%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
