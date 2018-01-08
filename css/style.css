@@ -49,6 +49,18 @@ h7 {
     
 }
 
+h9 {
+  text-align: center;
+      color: white;
+     font-size: .99em;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-bottom: em;
+    margin-bottom: ;
+    
+    
+    
+}
 p {text-align: center; color: gray;
    padding-left: 5em;
    padding-right: 5em}
@@ -181,7 +193,7 @@ ul li a {
 
 .nav-cs2 {
     
-     background-color: #B0CCD2 !important;
+     background-color: #f5e3e3 !important;
 }
 
 .nav-cs3 {
@@ -201,7 +213,7 @@ ul li a {
 
 .nav-cs6 {
     
-     background-color: #d5ecee !important;
+     background-color: #f5e3e3 !important;
 }
 
 /*-------------- portfolio -----------*/
@@ -440,11 +452,27 @@ div.about {
 
 
 
+/*------------- button ------------*/
 
 
 
-
-
+.button {
+  font: bold 12px lato;
+  text-decoration: none;
+  background-color: white;
+  color: #333333;
+ 
+  border: 2px solid dimgray; /* Green */
+ 
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 40%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin bottom: 5%;
+}
 
 
 
