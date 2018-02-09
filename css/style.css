@@ -220,8 +220,23 @@ ul li a {
 
 .case-study-row {
     display: flex;
-    justify-content: space-between;
-    padding: 3rem 19rem;
+    justify-content: space-around;
+    padding: 0rem 15%;
+    flex-wrap: wrap;
+}
+
+/*
+@media only screen and (min-width : 1200px) {
+    .case-study-row {
+        padding: 3rem 19rem;
+    }
+}
+*/
+
+.case-study-container {
+    padding: 3rem 0;
+    margin: 0 3rem;
+    flex: 0 1 auto;
 }
 
 .case-study {
@@ -230,6 +245,18 @@ ul li a {
 
 .case-study img {
     max-width: 17rem;
+}
+
+@media only screen and (min-width : 1200px) {
+    .case-study img {
+        max-width: 20rem;
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+    .case-study img {
+        max-width: 30rem;
+    }
 }
 
 .image-hover {
@@ -247,6 +274,22 @@ ul li a {
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
+}
+
+@media only screen and (min-width : 1200px) {
+    .image-hover {
+        height: 20rem;
+        width: 20rem;
+        top: -19rem;
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+    .image-hover {
+        height: 30rem;
+        width: 30rem;
+        top: -29rem;
+    }
 }
 
 .image-hover:hover {
@@ -311,8 +354,7 @@ footer li a:hover {
     list-style:none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 0 19rem;
+    justify-content: center;
 }
 
 .social {
@@ -355,12 +397,14 @@ div.cover.casestudy1{
     background: url(../images/covercs1.jpg)
     center center no-repeat;
     padding-bottom: 45%;
+    background-color: #d5ecee;
 }
 
 div.cover.casestudy2{
     background: url(../images/elementcover.png)
       center center no-repeat;
     padding-bottom: 45%;
+    background-color: #b0ccd2;
 
 }
 
@@ -368,6 +412,7 @@ div.cover.casestudy3{
     background: url(../images/potioncover.png)
       center center no-repeat;
     padding-bottom: 45%;
+    background-color: #a4a6c5;
 
 }
 
@@ -375,6 +420,7 @@ div.cover.casestudy4{
     background: url(../images/brandcover.png)
        center center no-repeat;
     padding-bottom: 45%;
+    background-color: #fbf7f7;
 
 }
 
@@ -382,6 +428,7 @@ div.cover.casestudy5{
     background: url(../images/ceramiccover.png)
        center center no-repeat;
     padding-bottom: 45%;
+    background-color: #ece5e7;
 
 }
 
@@ -389,6 +436,7 @@ div.cover.casestudy6{
     background: url(../images/teacupcover.png)
        center center no-repeat;
     padding-bottom: 45%;
+    background-color: #ece5e7;
 
 }
 
@@ -410,20 +458,73 @@ div.cover.casestudy6{
 
 .row-halves .content-half {
     width: 50%;
+    flex-direction: column;
+}
+
+.row-halves .content-half h6 {
+    margin-bottom: 1rem;
+}
+
+.image-half img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width : 2561px) {
+    
+    .image-half {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-half img{
+        width: 60%;
+        height: 75%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+    .image-half {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-half img{
+        width: 60%;
+        height: 75%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    
+    .row-halves {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .row-reverse {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .row-halves .content-half {
+        width: 100%;
+    }
 }
 
 .light-pink {
     background-color: #fbf7f7;
 }
 
-.image-half img {
-    width: 100%;
-}
+
 
 .full-width-image img {
     width: 100%;
-    
-        
+  
     
 }
 
